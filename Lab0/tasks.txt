@@ -1,2 +1,12 @@
 Task 6
 ------
+added tasks.txt w/ touch
+git commit message error
+edited commit message git commit --amend
+git log --grep=--no-mouse
+> commit c7e86ad4f1061b0cad9f64a6c9ad26f386bc1168
+> Author: Junegunn Choi <junegunn.c@gmail.com>
+> Date:   Thu Jan 30 15:41:44 2014 +0900
+> 
+>     Add --no-mouse option to replace FZF_MOUSE_ENABLED
+ The source I used to help me find a command to find the specific commit is through https://www.gun.io/blog/git-search-log
