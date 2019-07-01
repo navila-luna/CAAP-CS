@@ -13,3 +13,4 @@ git log --grep=--no-mouse
  What I did for Task 8 is I typed git diff READMe.txt to tell what where the changes in the file relative to the latest commit
  I used this as a resource for task 8
 https://stackoverflow.com/questions/10039747/how-to-view-file-diff-in-git-before-commit
+ What I did is I used rm to remove the file. This is a command that we used earlier on and it's also provided on the cheat sheet Jose gave us
