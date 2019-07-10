@@ -1,0 +1,50 @@
+
+@charset "UTF-8";
+body {
+  margin:0;
+  font-family:overpass;
+  background-color:#eceef0;
+}
+
+nav {
+  padding:1px 30px;
+  background-color: LightSlateGray;
+  color:white;
+  position:fixed;
+  width:100%;
+}
+/* .Description will make a red box where the text will be in white. */
+.description {
+  width:50%;
+  background-color:maroon;
+  display:inline-block;
+  padding:10px 40px 10px 40px;
+  text-align:justify;
+  margin-bottom:40px;
+    color: antiquewhite;
+}
+.description p {
+  color:white;
+  font-size:18px;
+    font-style: normal;
+}
+/* This will make the image small and to the right of the screen */
+#myImage{
+  height:300px;
+  float:right;
+}
+.wrapper {
+  padding: 100px 20px 20px 20px;
+}
+
+#sidebar li {
+  list-style:none;
+  margin-right:15px;
+  display: inline-block;
+}
+
+#music{
+    height:100px;
+    float:right;
+    width:30%; 
+}
