@@ -33,7 +33,6 @@ class Engine(object):
 			else:
 				current_scene = self.scene_map.next_scene(next_scene_name) #not sure
 				print(current_scene)
-				print('---------------------debugging-------------------')
 				n_moves += 1
 		if (next_scene_name == 'finished'):
 			self.escaped = True

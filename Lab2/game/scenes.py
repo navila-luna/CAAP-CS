@@ -24,6 +24,7 @@ class RiddleTown(Scene):
     
     
   def action(self):
+    # this is the harder level that adds another riddle 
     harder = input("To make the level harder type 2.0")
     if harder == "2.0":
       response = input(" What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great, while the entire world signifies a great woman. What is the word?" )
@@ -39,7 +40,7 @@ class RiddleTown(Scene):
       else: 
         print("Incorrect")
         return self.exit_scene('death')
-
+# this is easier and will make you move on if u pass
     if harder != "2.0":
       response= input(" What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great, while the entire world signifies a great woman. What is the word?" )
       if response.lower() == "heroine":
@@ -105,6 +106,7 @@ class Highschool(Scene):
         print("Welp.You Lost...You will end up in that shady place... make sure to punch some guards..")
         return self.exit_scene('death')
     #CHECK !!
+    # This makes the math questions harder in the sense that u need more write to win
     if  harder != "2.0":
       print("Welcome! In this maze you are trapped in a shady black market organ institute. They are keeping you in to later remove your organs. You were originally locked in a room, but you managed to get out by punching the guard when he was handing you the lunch of the day. Now that you are out of your cell you run straight until you reach a point that has door to the left and another on the right.")
       pathway = input("Which one do you open?")
@@ -148,6 +150,7 @@ class Fakefriends(Scene):
     print("Welcome! You have reached level 3. Please, sit down. On the table in front of you are two cups. One has blue cool-aid linked with poison and the other one has regular blue cool aid... in a few minutes your friend Luna will be coming. You drink one cup and she drinks the other one. You choose your and her fate.")
     return self.action()
   def action(self):
+    # If you choose the left then you die and if you choose right then you enter a high school and answer math questions
     choice = input("Which one shall it be? The one on the left or the one on the right?") 
     harder = input("To make the level harder, type 2.0")  
     if choice == "left":
@@ -192,6 +195,7 @@ class Fakefriends(Scene):
 
 class Rockpaperscissors(Scene):
   name = 'rockpaperscissors'
+  # play a game of rock paper and scissors you must win to move on and win overall... series of if stastements and a list to pick a move
 
   def enter(self):
       print("Welcome to level 4. Here is the rock paper scissor tournament. In this place the player is challenged to a game of rock paper scissors. You must win the match to move on to level 5. If you lose or tie, the people will decide who liked whose performance better. In the game, there are only three options: rock, paper, and scissors. When typing your result put it all in lowercase.")
@@ -211,7 +215,7 @@ class Rockpaperscissors(Scene):
       print("It's a tie!")
     # people decide to let him move on
       return self.exit_scene('finished')
-    elif player == "rock":
+    cs player == "rock":
         if comp == "paper":
            print("Oof you lost. computer got ", comp, " cover you so you lose.")
            return self.exit_scene('death')

@@ -23,6 +23,7 @@ class Leaderboard(object):
             playername = score.get_name()
             print("Player: ", playername, "\tMoves:",playerscore)
             #wtires the leaderboard to leaderboard_save.txt
+            #didn't have time to build the acutal text file, will get there
     def leaderboard_append(self):
         leaderboard_dict = {}
         for i in range(self.size):
